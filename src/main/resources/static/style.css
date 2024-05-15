@@ -1,0 +1,7 @@
+.restaurants {
+    display: flex;
+    align-items: center; /* Optional: Align items vertically centered */
+}
+.restaurants a {
+    margin-right: 10px; /* Add space between the a and p elements */
+}

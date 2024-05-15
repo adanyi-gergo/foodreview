@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurants</title>
+    <link th:href="@{/style.css}" rel="stylesheet">
+</head>
+<body>
+    <h1>Restaurants</h1>
+    <ul>
+        <li th:each="restaurant : ${restaurants}">
+            <div class="restaurants">
+                <a th:href="@{/restaurants/{id}(id=${restaurant.id})}" th:text="${restaurant.name}"></a>
+                <p th:text="${restaurant.overallScore}"></p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
